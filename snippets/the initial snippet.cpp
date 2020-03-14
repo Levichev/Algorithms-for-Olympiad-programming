@@ -6,13 +6,7 @@ using namespace std;
 #define llmax LONG_LONG_MAX
 #define IMIN INT_MIN
 #define IMAX INT_MAX
-#define ff first
-#define ss second
-#define pb push_back
-#define ll long long
 #define all(a) a.begin(),a.end()
-#define b(v) v.begin()
-#define e(v) v.end()    
 #define rep(i,a,b) for(auto i=(a); i<(b); i++)
 #define dec(i,n,a) for(auto i=(n); i>=(a); i--)
 #define sqr(a) ((a)*(a))
@@ -21,10 +15,16 @@ using namespace std;
 #define sz(s) s.size()
 #define len(s) s.length()
 #define inp(a) for(auto& i: a) cin >> i
-typedef pair<int,int> pii;
-typedef vector<int> vi;
 #define Yes cout << "Yes" << endl
 #define No cout << "No" << endl
+
+typedef long long ll;
+typedef pair<int,int> pii;
+typedef vector<int> vi;
+typedef vector<bool> vb;
+typedef vector<ll> vll;
+typedef vector<vector<int>> vvi;
+
 //#define _DEBUG
 
 
