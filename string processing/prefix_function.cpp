@@ -21,5 +21,8 @@ int main(){
 
     vector<int> a = prefix_function(s);
 
+    for(int i = 0; i < a.size(); ++i)
+        cout << a[i];
+
     return 0;
 }
