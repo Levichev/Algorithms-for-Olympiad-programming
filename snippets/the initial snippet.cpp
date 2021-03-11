@@ -5,7 +5,7 @@ using namespace std;
 #define     F                   first
 #define     S                   second
 #define     pb                  push_back
-#define     all(a)              a.begin(),a.end()   
+#define     all(a)              a.begin(),a.end()
 #define     rep(i,a,b)          for(auto i=(a); i<(b); i++)
 #define     dec(i,n,a)          for(auto i=(n); i>=(a); i--)
 #define     each(a,x)           for (auto& a: x)
@@ -36,11 +36,10 @@ typedef     vec<vec<int>>       vvi;
 typedef     vec<vec<ll>>        vvll;
 typedef     vec<vec<str>>       vvs;
 //#define _DEBUG
-     
+ 
 void solve() {
-
+    
 }
-
 int main() {
     ios_base::sync_with_stdio(0); cin.tie(0);cout.tie(0);
     #ifdef _DEBUG
