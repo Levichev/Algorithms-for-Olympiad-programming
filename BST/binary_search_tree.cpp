@@ -5,28 +5,33 @@ using namespace std;
 template <typename T>
 struct BST{
     T value;
+    BST* pr = nullptr;
     BST* left = nullptr;
     BST* right = nullptr;
-    BST* insert(BST* node, T value) {
+    friend BST* insert(BST* node, T value) {
         if (node == nullptr) {
             node = new BST();
             node->value = value;
             node->left = node->right = nullptr;
             return node;
         }
-        if (node->value < value)
+        if (node->value < value){
             node->right = insert(node->right, value);
-        node->left = insert(node->left, value);
+            node->right->pr = node;
+        } else {
+            node->left = insert(node->left, value);
+            node->left->pr = node;
+        }
         return node;
     }
-    BST* find(BST* node, T value) {
+    friend BST* find(BST* node, T value) {
         if (node == nullptr || node->value == value)
             return node;
         if (node->value < value)
             return find(node->right, value);
         return find(node->left, value);
     }
-    pair<BST*, BST*> erase_max(BST* node) {
+    friend pair<BST*, BST*> erase_max(BST* node) {
         if (node == nullptr) 
             return {nullptr, nullptr};
         if (node->right == nullptr)
@@ -37,17 +42,12 @@ struct BST{
         node->right = new_node;
         return {erased, node};
     } 
-    BST* remove(BST* node) {
-        if (node->left == nullptr){
-            delete node;
-            node = node->right;
-            return node;
-        }
-        if (node->right == nullptr) {
-            delete node;
-            node = node->left;
-            return node;
-        }
+    friend BST* remove(BST* node) {
+        if (node->left == nullptr)
+            return node->right;
+        if (node->right == nullptr) 
+            return node->left;
+            
         pair<BST*, BST*> tmp = erase_max(node->left);
         BST* erased = tmp.first;
         BST* new_left = tmp.second;
@@ -64,28 +64,35 @@ struct BST{
 int main() {
 
     BST<int> *root = nullptr;
+    root = new BST<int>;
+    root->value = -1e9;
+    root->left = root->right = nullptr;
+    root->pr = root;
     int n; cin >> n;
 
     for(int i = 0; i < n; ++i) {
         int cmd, x; cin >> cmd >> x;
 
         if (cmd == 1) {
-            if (root == nullptr) {
-                root = new BST<int>;
-                root->value = x;
-            } else {
-                root->insert(root,x);
-            }
+            root = insert(root,x);
         }
         if (cmd == 2) {
-            if (root != nullptr && root->find(root, x) != nullptr) {
+            if (find(root, x) != nullptr) {
                 cout << "YES\n";
             } else {
                 cout << "NO\n";
             }
         }
-        if (cmd == 3 && root != nullptr) {
-            root->remove(root->find(root,x));
+        if (cmd == 3) {
+            BST<int>* tmp = find(root,x);
+            if (tmp != nullptr) {
+                if (tmp->value <= tmp->pr->value)
+                    tmp->pr->left = remove(tmp);
+                else 
+                    tmp->pr->right = remove(tmp);
+            } else {
+                //no node
+            }
         }
     }
     
