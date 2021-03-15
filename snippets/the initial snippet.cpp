@@ -20,7 +20,7 @@ using namespace std;
 #define     NO                  cout << "NO" << nl
 #define     inc                 int t_; cin >> t_; while(t_--)
 #define     vec                 vector
-typedef     __int128_t          ll128;
+//typedef     __int128_t          ll128;
 typedef     long long           ll;
 typedef     string              str;
 typedef     long double         ld;
