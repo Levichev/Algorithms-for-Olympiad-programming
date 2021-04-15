@@ -1,4 +1,13 @@
 Мануал по ДП
+
+Структура ДП
+Чтобы успешно решить задачу динамикой нужно:
+1) Состояние динамики: параметр(ы), однозначно задающие подзадачу.
+2) Значения начальных состояний.
+3) Переходы между состояниями: формула пересчёта.
+4) Порядок пересчёта.
+5) Положение ответа на задачу: иногда это сумма или, например, максимум из значений нескольких состояний.
+
 Содержание:
 1) Задача о Рюкзаке
 
@@ -13,8 +22,17 @@
 - **∑w[i] → max**  
 
 **Решение:**  
-**d[i][j]** - можно ли набрать сумму **j** с помощью первых **i** предметов(можно брать их или не брать)  
+**d[i][j]** - можно ли набрать сумму **j** с помощью первых **i** предметов (Не обязательно брать все предметы)  
 
 
 2.  
 **w[i]** == **p[i]**  
+![Frame 1](https://user-images.githubusercontent.com/35433764/114901598-a0908c80-9e1d-11eb-9a7f-6865586d04e3.jpg)
+![Frame 8](https://user-images.githubusercontent.com/35433764/114901602-a1292300-9e1d-11eb-9482-988dbf519638.jpg)
+![Frame 7](https://user-images.githubusercontent.com/35433764/114901605-a1c1b980-9e1d-11eb-8a64-b196ce091fb6.jpg)
+![Frame 6](https://user-images.githubusercontent.com/35433764/114901608-a1c1b980-9e1d-11eb-93cb-41ec56c002c0.jpg)
+![Frame 5](https://user-images.githubusercontent.com/35433764/114901609-a25a5000-9e1d-11eb-995f-79537752e467.jpg)
+![Frame 4](https://user-images.githubusercontent.com/35433764/114901611-a2f2e680-9e1d-11eb-8fd6-c840e8401c05.jpg)
+![Frame 3](https://user-images.githubusercontent.com/35433764/114901612-a2f2e680-9e1d-11eb-83aa-82e48ff3cd75.jpg)
+![Frame 2](https://user-images.githubusercontent.com/35433764/114901615-a38b7d00-9e1d-11eb-8e21-f82802d3e719.jpg)
+
