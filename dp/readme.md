@@ -45,6 +45,7 @@ for j = 0..N:
 for i = W..0:
   if dp[N][i] == 1:
     ans = i
+    break
 ```
 
 ### Рассмотрим пример;
