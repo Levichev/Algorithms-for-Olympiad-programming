@@ -17,22 +17,31 @@
 Есть несколько вариаций этой задачи, рассмотрим некоторые из них в порядке возрастания сложности  
 
 1)
-- **w[i] == p[i]**  
+- **w[i] == c[i]**  
 - **∑w[i] <= W**  
 - **∑w[i] → max**  
 
 **Решение:**  
+1) 
 **d[i][j]** - можно ли набрать сумму **j** с помощью первых **i** предметов (Не обязательно брать все предметы)  
 
 
 2.  
-**w[i]** == **p[i]**  
-![Frame 1](https://user-images.githubusercontent.com/35433764/114901598-a0908c80-9e1d-11eb-9a7f-6865586d04e3.jpg)
-![Frame 8](https://user-images.githubusercontent.com/35433764/114901602-a1292300-9e1d-11eb-9482-988dbf519638.jpg)
-![Frame 7](https://user-images.githubusercontent.com/35433764/114901605-a1c1b980-9e1d-11eb-8a64-b196ce091fb6.jpg)
-![Frame 6](https://user-images.githubusercontent.com/35433764/114901608-a1c1b980-9e1d-11eb-93cb-41ec56c002c0.jpg)
-![Frame 5](https://user-images.githubusercontent.com/35433764/114901609-a25a5000-9e1d-11eb-995f-79537752e467.jpg)
-![Frame 4](https://user-images.githubusercontent.com/35433764/114901611-a2f2e680-9e1d-11eb-8fd6-c840e8401c05.jpg)
-![Frame 3](https://user-images.githubusercontent.com/35433764/114901612-a2f2e680-9e1d-11eb-83aa-82e48ff3cd75.jpg)
-![Frame 2](https://user-images.githubusercontent.com/35433764/114901615-a38b7d00-9e1d-11eb-8e21-f82802d3e719.jpg)
+**w[i]** == **c[i]**  
 
+![Frame 16](https://user-images.githubusercontent.com/35433764/114986024-281ce080-9e9c-11eb-9058-07ca9cac690c.png)
+![Frame 17](https://user-images.githubusercontent.com/35433764/114986023-27844a00-9e9c-11eb-9c4b-798c18c5a815.png)
+![Frame 18](https://user-images.githubusercontent.com/35433764/114986022-27844a00-9e9c-11eb-912f-ea8e78ca861b.png)
+![Frame 19](https://user-images.githubusercontent.com/35433764/114986019-26ebb380-9e9c-11eb-9a91-d94ddb3bce72.png)
+![Frame 20](https://user-images.githubusercontent.com/35433764/114986018-26531d00-9e9c-11eb-8f98-6f52014f8e7b.png)
+![Frame 21](https://user-images.githubusercontent.com/35433764/114986016-25ba8680-9e9c-11eb-8718-54eb8f0d45e2.png)
+
+
+
+![Frame 9](https://user-images.githubusercontent.com/35433764/114986394-9cf01a80-9e9c-11eb-8710-a75e970b0b26.png)
+![Frame 10](https://user-images.githubusercontent.com/35433764/114986392-9cf01a80-9e9c-11eb-988b-6528608bc1ef.png)
+![Frame 11](https://user-images.githubusercontent.com/35433764/114986390-9c578400-9e9c-11eb-85aa-83799bdf39e8.png)
+![Frame 12](https://user-images.githubusercontent.com/35433764/114986388-9c578400-9e9c-11eb-8909-c62e3d2b97ed.png)
+![Frame 13](https://user-images.githubusercontent.com/35433764/114986386-9bbeed80-9e9c-11eb-898c-6e9b08b23fa0.png)
+![Frame 14](https://user-images.githubusercontent.com/35433764/114986382-9b265700-9e9c-11eb-8c17-a89c11dfffae.png)
+![Frame 15](https://user-images.githubusercontent.com/35433764/114986381-9a8dc080-9e9c-11eb-8af5-ac275c5061bc.png)
