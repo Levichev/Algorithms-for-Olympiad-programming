@@ -47,7 +47,8 @@ for i = W..0:
 **w[i]** == **c[i]**  
 Рассмотрим пример;
 **N = 4**
-w = {
+w = {3, 2, 6, 4}  
+
 ![Frame 16](https://user-images.githubusercontent.com/35433764/114986024-281ce080-9e9c-11eb-9058-07ca9cac690c.png)  
 
 Заполняем базу:
