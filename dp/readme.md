@@ -23,8 +23,17 @@
 
 **Решение:**  
 **d[i][j]** - можно ли набрать сумму **j** с помощью первых **i** предметов (Не обязательно брать все предметы)  
-![Frame 16](https://user-images.githubusercontent.com/35433764/114986024-281ce080-9e9c-11eb-9058-07ca9cac690c.png)
-![Frame 17](https://user-images.githubusercontent.com/35433764/114986023-27844a00-9e9c-11eb-9c4b-798c18c5a815.png)
+![Frame 16](https://user-images.githubusercontent.com/35433764/114986024-281ce080-9e9c-11eb-9058-07ca9cac690c.png)  
+Заполняем базу:  
+Вес 0 мы можем набрать используя любые предмет(просто не брать их)  
+Используя 0 предметов можно набрать только вес равный нулю  
+На каждом шаге будем проверять можно ли получить вес j.  
+В каких случаях это возможно?  
+- Мы смогли набрать вес j, используя меньшее количество преметов (смотрим в i-1, j состояние)
+- Мы смогли набрать вес j - w[i], используя меньшее количество предметов(смотрим в i-1, j-w[i] состояние)  
+
+![Frame 17](https://user-images.githubusercontent.com/35433764/114986023-27844a00-9e9c-11eb-9c4b-798c18c5a815.png)  
+
 ![Frame 18](https://user-images.githubusercontent.com/35433764/114986022-27844a00-9e9c-11eb-912f-ea8e78ca861b.png)
 ![Frame 19](https://user-images.githubusercontent.com/35433764/114986019-26ebb380-9e9c-11eb-9a91-d94ddb3bce72.png)
 ![Frame 20](https://user-images.githubusercontent.com/35433764/114986018-26531d00-9e9c-11eb-8f98-6f52014f8e7b.png)
@@ -32,12 +41,13 @@
 
 
 2.  
-**w[i]** != **c[i]**  
+- **w[i]** != **c[i]**  
 - **∑w[i] <= W**  
 - **∑s[i] → max**  
 
 ![Frame 9](https://user-images.githubusercontent.com/35433764/114986394-9cf01a80-9e9c-11eb-8710-a75e970b0b26.png)
-![Frame 10](https://user-images.githubusercontent.com/35433764/114986392-9cf01a80-9e9c-11eb-988b-6528608bc1ef.png)
+![Frame 10](https://user-images.githubusercontent.com/35433764/114986392-9cf01a80-9e9c-11eb-988b-6528608bc1ef.png)  
+
 ![Frame 11](https://user-images.githubusercontent.com/35433764/114986390-9c578400-9e9c-11eb-85aa-83799bdf39e8.png)
 ![Frame 12](https://user-images.githubusercontent.com/35433764/114986388-9c578400-9e9c-11eb-8909-c62e3d2b97ed.png)
 ![Frame 13](https://user-images.githubusercontent.com/35433764/114986386-9bbeed80-9e9c-11eb-898c-6e9b08b23fa0.png)
