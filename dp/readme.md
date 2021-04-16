@@ -60,9 +60,11 @@ w = {
 
 ![Frame 17](https://user-images.githubusercontent.com/35433764/114986023-27844a00-9e9c-11eb-9c4b-798c18c5a815.png)  
 ![Frame 18](https://user-images.githubusercontent.com/35433764/114986022-27844a00-9e9c-11eb-912f-ea8e78ca861b.png)
-![Frame 19](https://user-images.githubusercontent.com/35433764/114986019-26ebb380-9e9c-11eb-9a91-d94ddb3bce72.png)
-![Frame 20](https://user-images.githubusercontent.com/35433764/114986018-26531d00-9e9c-11eb-8f98-6f52014f8e7b.png)
+![Frame 19](https://user-images.githubusercontent.com/49977820/114995364-67e8c580-9ea6-11eb-95c0-0d54836f249b.png)
+![Frame 20](https://user-images.githubusercontent.com/49977820/114995302-5acbd680-9ea6-11eb-8e3a-39bcf7b8ce9c.png)
 ![Frame 21](https://user-images.githubusercontent.com/35433764/114986016-25ba8680-9e9c-11eb-8718-54eb8f0d45e2.png)
+
+
 
 ## Задача о Рюкзаке со стоимостью
 
