@@ -48,8 +48,8 @@ for i = W..0:
 ```
 
 ### Рассмотрим пример;
-**N = 4**
-w = {3, 2, 6, 4}  
+**N = 4**  
+**w = {3, 2, 6, 4}**  
 
 ![Frame 16](https://user-images.githubusercontent.com/35433764/114986024-281ce080-9e9c-11eb-9058-07ca9cac690c.png)  
 
