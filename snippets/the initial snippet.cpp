@@ -11,7 +11,7 @@ using namespace std;
 #define     dec(i,n,a)          for(auto i=(n); i>=(a); i--)
 #define     each(a,x)           for (auto& a: x)
 #define     nl                  '\n'
-#define     sz(s)               ((int)(s.size())
+#define     sz(s)               ((int)(s.size()))
 #define     inp(a)              for(int i_=0;i_<a.size();i_++)cin>>a[i_] 
 #define     prt(a)              for(int i_=0;i_<a.size();i_++)cout << a[i_] << ' '
 #define     _                   auto
