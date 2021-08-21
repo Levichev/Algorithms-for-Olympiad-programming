@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 #pragma GCC Optimize("Ofast")
-
 using namespace std;
 #define     INF                 INT_MAX
 #define     INFLL               LONG_LONG_MAX
