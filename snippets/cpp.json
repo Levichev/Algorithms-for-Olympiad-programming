@@ -3,6 +3,7 @@
 		"prefix": "cpp",
 		"body": [
 			"#include <bits/stdc++.h>",
+			"#pragma GCC Optimize(\"Ofast\")",
 			"using namespace std;",
 			"#define     INF                 INT_MAX",
 			"#define     INFLL               LONG_LONG_MAX",
@@ -56,5 +57,64 @@
 		],
 		"description": "cpp for OP"
 	}
-
+	,
+	"rep": {
+		"prefix": "re",
+		"body": [
+			"rep($1, $2, $3) "
+		],
+		"description": "rep for OP"
+	}
+	,
+	"dec": {
+		"prefix": "de",
+		"body": [
+			"dec($1, $2, $3) "
+		],
+		"description": "dec for OP"
+	}
+	,
+	"z_function": {
+		"prefix": "z_func",
+		"body": [
+			"vector<long long> z_function(const string& s) {",
+			"\tlong long n = s.size();",
+			"\tvector<long long> z(n);",
+			"",
+			"\tlong long l = 0, r = 0;",
+			"\tfor(long long i = 1; i < n; ++i){",
+			"\tif (i <= r)",
+			"\t\tz[i] = min(z[i-l],r-i);",
+			"\t",
+			"\twhile(z[i] + i < n && s[z[i] + i] == s[z[i]])",
+			"\t\tz[i]++;",
+			"\t\tif (z[i] + i - 1 > r){",
+			"\t\t\tl = i;",
+			"\t\t\tr = i + z[i] - 1;",
+			"\t\t}",
+			"\t}",
+			"\treturn z;",
+			"}" 
+		],
+		"description": "z_function for OP"
+	}
+	,
+	"prefix_function": {
+		"prefix": "prefix_func",
+		"body": [
+			"vector<long long> prefix_function(const string& s){",
+			"\tlong long n = s.size();",
+			"\tvector<long long> a(n);",
+			"\tfor(long long i = 1; i < n; ++i){",
+			"\t\tlong long j = a[i-1];",
+			"\t\twhile(j > 0 && s[i] != s[j])",
+			"\t\t\tj = a[j-1];",
+			"\t\tif (s[i] == s[j]) ++j;",
+			"\t\ta[i] = j;",
+			"\t}",
+			"\treturn a;",
+			"}"
+		],
+		"description": "prefix_function for OP"
+	}
 }
