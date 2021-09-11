@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <numeric>
 #pragma GCC Optimize("Ofast")
 using namespace std;
 #define     INF                 INT_MAX
